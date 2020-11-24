@@ -1,4 +1,4 @@
-[https://github.com/miftanurfarid/beamer_itk_theme](Beamer ITK Theme) is beamer theme with ITK Logo & Color based on [Beamer Nomi](https://github.com/bagustris/beamer-nomi) and [Beamer Torino](https://github.com/bbatsov/beamer-torino-theme).
+[Beamer ITK Theme](https://github.com/miftanurfarid/beamer_itk_theme) is beamer theme with ITK Logo & Color based on [Beamer Nomi](https://github.com/bagustris/beamer-nomi) and [Beamer Torino](https://github.com/bbatsov/beamer-torino-theme).
 
 
 ## Installation
