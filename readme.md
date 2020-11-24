@@ -3,16 +3,16 @@
 
 ## Installation
 
-Move all files in this repository to ~/texmf/tex/latex/beamer:
+Move all files in **theme** folder to ~/texmf/tex/latex/beamer:
 ~~~
 $ mkdir -p ~/texmf/tex/latex/beamer
-$ cp *.sty ~/texmf/tex/latex/beamer
+$ cp theme/*.sty ~/texmf/tex/latex/beamer
 ~~~
 
 ## Compilation
 ~~~
 $ cd example
-$ pdflatex beamer_16.9.tex
+$ pdflatex example.tex
 ~~~
 
 ## Changelog
