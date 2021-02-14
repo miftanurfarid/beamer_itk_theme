@@ -16,3 +16,5 @@ $ pdflatex example.tex
 ~~~
 
 ## Changelog
+02/14/2021
+Fix outline's line-spacing

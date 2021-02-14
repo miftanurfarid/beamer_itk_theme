@@ -2,9 +2,12 @@
 \documentclass[aspectratio=169]{beamer}
 \usepackage{animate} % for animation
 \usepackage{array,multirow,graphicx}
-%\graphicspath{{/media/bagustris/atmaja/s3/zemi/bagus-zemi/2018-05-04/}
-%               {/media/bagustris/atmaja/s3/zemi/bagus-zemi/2018-09-20/}}
+\usepackage{multicol}
+\usepackage{etoolbox}
+%\graphicspath{{/directory/to/graph/folder1/}
+%               {/directory/to/graph/folder2/}}
 \setbeamertemplate{caption}[numbered]
+\setbeamertemplate{section in toc}[sections numbered]
 
 \renewcommand{\figurename}{Gambar.}
 \renewcommand{\tablename}{Tabel.}
@@ -19,10 +22,15 @@
 			% change /beamerinnerthemefancy.sty to resize the logo
 \usecolortheme{freewilly}
 
+% Fix outline spacing
+\makeatletter
+\patchcmd{\beamer@sectionintoc}{\vskip1.5em}{\vskip0em}{}{}
+\makeatother
+
 \author{Mifta Nur Farid \\
 	miftanurfarid@lecturer.itk.ac.id}
-\title{MATERIAL TEKNIK ELEKTRO}
-\subtitle{SUSUNAN ATOM PADA BENDA PADAT}
+\title{Sinyal dan Sistem}
+\subtitle{Sistem Linear Time-Invariant}
 \institute{Teknik Elektro \\ Institut Teknologi Kalimantan \\ Balikpapan, Indonesia}
 \date{\tiny November 24, 2020}
 
@@ -35,12 +43,35 @@
 \titlepage
 \end{frame}
 
-\begin{frame}{Judul Frame}
+\section{Bahan Kajian}
+\begin{frame}{Bahan Kajian}
+%	\begin{multicols}{2} % Two columns for outline
+		\tableofcontents[hideallsubsections]
+%	\end{multicols}
+\end{frame}
+
+\section{Bahan Kajian 1}
+\begin{frame}{Judul Frame 1}
 	\begin{itemize}
 		\item Item 1
 		\item Item 2
 	\end{itemize}
 \end{frame}
 
+\begin{frame}{Judul Frame 2}
+	\begin{itemize}
+		\item Item 1
+		\item Item 2
+	\end{itemize}
+\end{frame}
+
+
+\section{Bahan Kajian 2}
+\begin{frame}{Judul Frame 3}
+	\begin{enumerate}
+		\item Item 1
+		\item Item 2
+	\end{enumerate}
+\end{frame}
 \end{document}
 
