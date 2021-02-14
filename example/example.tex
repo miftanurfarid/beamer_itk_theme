@@ -4,10 +4,14 @@
 \usepackage{array,multirow,graphicx}
 \usepackage{multicol}
 \usepackage{etoolbox}
-%\graphicspath{{/directory/to/graph/folder1/}
-%               {/directory/to/graph/folder2/}}
+%\graphicspath{{/media/bagustris/atmaja/s3/zemi/bagus-zemi/2018-05-04/}
+%               {/media/bagustris/atmaja/s3/zemi/bagus-zemi/2018-09-20/}}
 \setbeamertemplate{caption}[numbered]
 \setbeamertemplate{section in toc}[sections numbered]
+
+% Hide subsubsections from TOC, but keep PDF bookmarks with beamer
+\hypersetup{bookmarksopen=true,bookmarksopenlevel=4}
+\setcounter{tocdepth}{4}
 
 \renewcommand{\figurename}{Gambar.}
 \renewcommand{\tablename}{Tabel.}
@@ -22,7 +26,6 @@
 			% change /beamerinnerthemefancy.sty to resize the logo
 \usecolortheme{freewilly}
 
-% Fix outline spacing
 \makeatletter
 \patchcmd{\beamer@sectionintoc}{\vskip1.5em}{\vskip0em}{}{}
 \makeatother
@@ -43,10 +46,9 @@
 \titlepage
 \end{frame}
 
-\section{Bahan Kajian}
 \begin{frame}{Bahan Kajian}
 %	\begin{multicols}{2} % Two columns for outline
-		\tableofcontents[hideallsubsections]
+    \tableofcontents[subsectionstyle=hide]
 %	\end{multicols}
 \end{frame}
 
@@ -58,6 +60,7 @@
 	\end{itemize}
 \end{frame}
 
+\subsection{Sub Bahan Kajian 1}
 \begin{frame}{Judul Frame 2}
 	\begin{itemize}
 		\item Item 1
@@ -65,6 +68,13 @@
 	\end{itemize}
 \end{frame}
 
+\subsection{Sub Bahan Kajian 2}
+\begin{frame}{Judul Frame 2}
+	\begin{itemize}
+		\item Item 1
+		\item Item 2
+	\end{itemize}
+\end{frame}
 
 \section{Bahan Kajian 2}
 \begin{frame}{Judul Frame 3}
